@@ -1,0 +1,9 @@
+<h1>{{capitalize pokemon.name}}</h1>
+
+<img src="{{pokemon.sprites.front_default}}" alt="{{pokemon.name}}">
+<h2>Type(s):</h2>
+<ul>
+    {{#each pokemon.types}}
+    <li>{{capitalize this.type.name}}</li>
+    {{/each}}
+</ul>

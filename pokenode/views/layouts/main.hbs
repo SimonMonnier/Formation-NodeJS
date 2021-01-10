@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+        <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
+        <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="style.css">
+        <title>Pokenode</title>
+    </head>
+    <body>
+        <div class="page">
+            <!--Import d'un partial -->
+            {{>header}}
+            
+            <section class="content">
+                <!--Import d'un layout -->
+                {{{body}}}
+            </section>
+            
+            <!--Import d'un partial -->
+            {{>footer}}
+        </div>
+        
+    </body>
+</html>
