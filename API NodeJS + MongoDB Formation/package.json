@@ -1,0 +1,25 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "Formation API nodeJS + MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "smonnier",
+  "license": "ISC",
+  "types": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  },
+  "type": "module",
+  "engines": {
+    "node": "14.x"
+  }
+}
