@@ -1,0 +1,54 @@
+GET http://localhost:444/api/rooms
+
+###
+
+PATCH http://localhost:444/api/rooms/5fff3418018bed2af075eb51 HTTP/1.1
+content-type: application/json
+
+{
+    "promo": "True"
+}
+
+###
+
+GET http://localhost:444/api/rooms/5fff3418018bed2af075eb51
+
+###
+
+POST http://localhost:5000/private/api/rooms?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMDJjYjI1OTFiMTQwMzNkODY0NmY3MSIsImVtYWlsIjoicy5tb25uaWVyNDQ0NDBAZ21haWwuY29tIn0sImlhdCI6MTYxMDgwODI4N30.MBsoJxsyYHVy5yDg9h1KxUALaEuWdi17JWsqNTUdiXo HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Chambre 8",
+    "maxPersons": 5
+}
+
+###
+
+DELETE http://localhost:5000/api/rooms/5fff315016a07011d83711c8
+
+###
+
+POST http://localhost:5000/signup HTTP/1.1
+content-type: application/json
+
+{
+    "email": "s.monnier44440@gmail.com",
+    "password": "0123456789"
+}
+
+###
+
+POST http://localhost:5000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "s.monnier44440@gmail.com",
+    "password": "0123456789"
+}
+
+###
+
+GET http://localhost:5000/private/secret?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMDJjYjI1OTFiMTQwMzNkODY0NmY3MSIsImVtYWlsIjoicy5tb25uaWVyNDQ0NDBAZ21haWwuY29tIn0sImlhdCI6MTYxMDgwNzY3OH0.F4xtfBFLLyCjpWwEV9dhIA1KfitziSL80dxoKWFOZ0U
+
+###
